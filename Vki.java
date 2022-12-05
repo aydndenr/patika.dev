@@ -4,7 +4,7 @@ public class Vki {
 	public static void main(String[] args) {
 		
 		Scanner scan= new Scanner(System.in);
-		double boy,kilo,vki;
+		double boy,kilo;
 		
 	System.out.println("Boyunuzu giriniz mt=");
 	boy=scan.nextDouble();
