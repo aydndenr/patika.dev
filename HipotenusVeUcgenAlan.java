@@ -4,31 +4,31 @@ public class HipotenusVeUcgenAlan {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a, b, d, e, f;
-		double c, g;
+		int aKenar, bKenar, dKenar, eKenar, fKenar;
+		double cHip, gCev;
 		Scanner scan = new Scanner(System.in);
 		System.out.println("1. kenar= ");
 
-		a = scan.nextInt();
+		aKenar = scan.nextInt();
 		System.out.println("2. kenar= ");
-		b = scan.nextInt();
+		bKenar = scan.nextInt();
 
-		c = Math.sqrt((Math.pow(a, 2) + Math.pow(b, 2)));
-		System.out.println("hipotenüs=" + c);
+		cHip = Math.sqrt((Math.pow(aKenar, 2) + Math.pow(bKenar, 2)));
+		System.out.println("hipotenüs=" + cHip);
 
 		System.out.println("1. kenar= ");
-		d = scan.nextInt();
+		dKenar = scan.nextInt();
 
 		System.out.println("2. kenar= ");
-		e = scan.nextInt();
+		eKenar = scan.nextInt();
 
 		System.out.println("3. kenar= ");
 
-		f = scan.nextInt();
+		fKenar = scan.nextInt();
 		
-		g=(d+e+f)/2;
+		gCev=(dKenar+eKenar+fKenar)/2;
 		
-		System.out.println("Üçgenin Alanı="+Math.sqrt(g*(g-d)*(g-e)*(g-f)));
+		System.out.println("Üçgenin Alanı="+Math.sqrt(gCev*(gCev-dKenar)*(gCev-eKenar)*(gCev-fKenar)));
 	}
 
 }
