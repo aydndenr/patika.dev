@@ -31,7 +31,8 @@ public class HesapMakinesi {
 		case 4:
 			System.out.println("sonuç=" + (sayi1 / sayi2));
 			break;
-
+		default:
+			System.out.println("hatalı işlem tekrar dene");
 		}
 
 	}
