@@ -30,6 +30,7 @@ public class NotHesaplama {
        
        int toplam= matematik+turkce+fizik+kimya+tarih+muzik;
        double sonuc=toplam/6;
+     
        System.out.println(sonuc>60 ? "Gecti":"kaldı");
 
 
