@@ -1,40 +1,38 @@
-import java.io.*;
-import java.util.*;
-import java.util.ArrayList;
-
-
+import java.util.Scanner;
 
 public class HesapMakinesi {
 
-    public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-       int matematik, turkce, fizik, kimya,tarih,muzik;
-       
-       
-       
-       Scanner scan=new Scanner(System.in);
-       System.out.println("Matematik:");
-       matematik=scan.nextInt();
-       System.out.println("turkce:");
-       turkce=scan.nextInt();
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		double sayi1, sayi2;
+		int islem;
+		System.out.println("Bir sayı gir");
+		sayi1 = scan.nextDouble();
+		System.out.println("Bir daha sayı gir");
+		sayi2 = scan.nextDouble();
+		System.out.println("toplama için 1 çıkarma için 2 çarpma için 3 bölme için 4 yaz");
+		islem = scan.nextInt();
+		switch (islem) {
 
-       System.out.println("fizik:");
-       fizik=scan.nextInt();
+		case 1:
+			System.out.println("sonuç=" + (sayi1 + sayi2));
 
-       System.out.println("kimya:");
-       kimya=scan.nextInt();
+			break;
 
-       System.out.println("tarih:");
-       tarih=scan.nextInt();
+		case 2:
+			System.out.println("sonuç=" + (sayi1 - sayi2));
+			break;
 
-       System.out.println("müzik:");
-       muzik=scan.nextInt();
-       
-       int toplam= matematik+turkce+fizik+kimya+tarih+muzik;
-       double sonuc=toplam/6;
-       System.out.println(sonuc>60 ? "Gecti":"kaldı");
+		case 3:
+			System.out.println("sonuç=" + (sayi1 * sayi2));
 
+			break;
 
-    }
-    
+		case 4:
+			System.out.println("sonuç=" + (sayi1 / sayi2));
+			break;
+
+		}
+
+	}
 }
