@@ -7,21 +7,19 @@ public class PrimeNumb {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Program çalıştı");
 
-		System.out.print(2 + "");
+		
 
 		for (int i = 2; i < 101; i++) {
+			boolean right=true;
 			for (int j = 2; j < i; j++) {
 				if (i % j == 0) {
+right=false;
 
-					break;
-
-				} else if (j == i - 1)
-					System.out.print(" " + i);
-				else
-					continue;
+				} 
 
 			}
-
+			if(right==true)
+			System.out.print(" " + i);
 		}
 
 	}
