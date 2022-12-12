@@ -5,7 +5,6 @@ public class Nnumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-
 		int numb1, numb2 = 0, numb3 = 0, changes;
 		System.out.println("KAÇ SAYI GİRİLECEKTİR?= ");
 		changes = scan.nextInt();
@@ -22,7 +21,6 @@ public class Nnumber {
 						: " burada olmaması gerekir?");
 				return;
 			}
-
 			--changes;
 			if (numb1 > numb3)
 				numb3 = numb1;
@@ -30,11 +28,9 @@ public class Nnumber {
 				numb2 = numb1;
 			else
 				continue;
-
 		}
 		System.out.println("en büyük sayı =" + numb3);
 		System.out.println("en küçük sayı =" + numb2);
-
 	}
 
 }
