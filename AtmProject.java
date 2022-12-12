@@ -32,9 +32,9 @@ public class AtmProject {
                     case 2 :{
                         System.out.print("Para miktarı : ");
                         int price = input.nextInt();
-                        boolean ans=price>balance;
                         if (price > balance) {
                             System.out.println("Bakiye yetersiz.");
+                            break;
                         } else {
                             balance -= price;
                             break;
